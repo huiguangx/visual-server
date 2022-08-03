@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@vercel/node": "^2.5.3",
     "express": "^4.18.1"
   },
   "scripts": {
