@@ -1,0 +1,11 @@
+{
+    "chartData": [
+        {"name": "熟食", "value": "234"},
+        {"name": "服饰", "value": "184"},
+        {"name": "数码产品", "value": "64"},
+        {"name": "家电", "value": "104"},
+        {"name": "家居", "value": "30"},
+        {"name": "日化", "value": "131"}
+    ]
+    
+}
