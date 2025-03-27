@@ -18,7 +18,7 @@ npm >= 8.x 或 yarn >= 1.x
 克隆项目到本地：
 
 ```bash
-git clone git@github.com:huiguangx/visual-data.git
+git clone https://github.com/huiguangx/visual-data.git
 ```
 
 ```bash
@@ -40,9 +40,12 @@ npm run dev
 
 生产模式下启动服务：
 
-bash
-深色版本
-npm start
+项目根目录运行
+
+```
+node index.js
+```
+
 默认情况下，服务会监听 http://localhost:8888。
 
 API 文档
@@ -53,37 +56,17 @@ GET /one
 
 示例请求：
 
-bash
-深色版本
+```bash
 curl http://localhost:8888/one
+```
+
 响应示例：
 
-json
-深色版本
+```json
 {
-"data": "Response from /one"
+  "data": "Response from /one"
 }
-POST /two
-向模块二发送数据。
-
-示例请求：
-
-bash
-深色版本
-curl -X POST http://localhost:8888/two \
--H "Content-Type: application/json" \
--d '{"key": "value"}'
-响应示例：
-
-json
-深色版本
-{
-"message": "Data received",
-"data": {
-"key": "value"
-}
-}
-更多接口请参考代码中的路由文件。
+```
 
 目录结构
 plaintext
@@ -100,5 +83,6 @@ node-service/
 │ └── logger.js # 日志记录中间件
 └── logs/ # 日志文件目录
 
+## 许可证
 
-## 本项目采用 MIT 许可证。详情请参阅 LICENSE 文件。
+本项目采用 MIT 许可证。详情请参阅 LICENSE 文件。
